@@ -5,12 +5,12 @@ public class SickPerson extends Person {
 		super(name, age);
 	}
 	
-	public int compareToImpl(Person) {
-		
+	protected int compareToImpl(Person p) {
+		return 0;
 	}
 	
 	public String toString() {
-		
+		return null;
 	}
 
 }
