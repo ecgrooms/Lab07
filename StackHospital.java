@@ -12,23 +12,23 @@ public class StackHospital<PatientType> extends Hospital<PatientType>{
 	}
 	
 	public PatientType nextPatient() {
-		return null;
+		return nextPatient();
 	}
 	
 	public PatientType treatNextPatient() {
-		return null;
+		return treatNextPatient();
 	}
 	
 	public int numPatients() {
-		return 0;
+		return numPatients();
 	}
 	
 	public String hospitalType() {
-		return null;
+		return hospitalType();
 	}
 	
 	public String allPatientInfo() {
-		return null;
+		return allPatientInfo();
 	}
 	
 }
