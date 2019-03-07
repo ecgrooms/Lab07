@@ -1,5 +1,23 @@
+import java.util.Stack;
+
 
 public class StackHospital<PatientType> extends Hospital<PatientType>{
+	
+	private Stack<PatientType> patientStack;
+	
+	public void addPatient(PatientType patient) {
+		
+		patientStack.add(patient);
+		
+	}
+	
+	public PatientType nextPatient() {
+		return null;
+	}
+	
+	public PatientType treatNextPatient() {
+		return null;
+	}
 	
 	public int numPatients() {
 		return 0;
@@ -12,24 +30,5 @@ public class StackHospital<PatientType> extends Hospital<PatientType>{
 	public String allPatientInfo() {
 		return null;
 	}
-
-	@Override
-	public void addPatient(PatientType patient) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public PatientType nextPatient() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public PatientType treatNextPatient() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-
+	
 }

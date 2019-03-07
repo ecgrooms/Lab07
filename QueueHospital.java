@@ -1,7 +1,12 @@
+import java.util.Queue;
 
 public class QueueHospital<PatientType> extends Hospital<PatientType> {
 	
+	private Queue<PatientType> quePatient;
+	
 	public void addPatient(PatientType patient) {
+		
+		quePatient.add(patient);
 		
 	}
 	

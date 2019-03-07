@@ -1,7 +1,12 @@
+import java.util.PriorityQueue;
 
 public class PriorityQueueHospital<PatientType> extends Hospital<PatientType>{
 	
+	private PriorityQueue<PatientType> priorQue;
+	
 	public void addPatient(PatientType patient) {
+		
+		priorQue.add(patient);
 		
 	}
 	
