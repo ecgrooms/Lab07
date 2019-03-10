@@ -3,7 +3,7 @@ import java.util.Stack;
 
 public class StackHospital<PatientType> extends Hospital<PatientType>{
 	
-	private Stack<PatientType> patientStack;
+	private Stack<PatientType> patientStack = new Stack<PatientType>();
 	
 	public StackHospital() {
 		
@@ -17,16 +17,14 @@ public class StackHospital<PatientType> extends Hospital<PatientType>{
 	
 	public PatientType nextPatient() {
 		
-		for(int i = 0; i < patientStack.size(); i++) {
-			
-		}
-		return nextPatient();
+		return patientStack.peek();
+		
 	}
 	
 	public PatientType treatNextPatient() {
 		
 		
-		return treatNextPatient();
+		return patientStack.pop();
 	}
 	
 	public int numPatients() {
