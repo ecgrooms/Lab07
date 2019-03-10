@@ -11,23 +11,31 @@ public class PriorityQueueHospital<PatientType> extends Hospital<PatientType>{
 	}
 	
 	public PatientType nextPatient() {
-		return null;
+		return priorQue.peek();
 	}
 	
 	public PatientType treatNextPatient() {
-		return null;
+		return priorQue.poll();
 	}
 	
 	public int numPatients() {
-		return 0;
+		
+		int remained = priorQue.size();
+		
+		return remained;
+		
 	}
 	
 	public String hospitalType() {
-		return null;
+		return "PriorityQueueHospital";
 	}
 	
 	public String allPatientInfo() {
-		return null;
+		
+		String patientInfo = priorQue.toString();
+		
+		return patientInfo;
+		
 	}
 
 }
