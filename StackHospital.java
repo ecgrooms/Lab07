@@ -38,7 +38,7 @@ public class StackHospital<PatientType> extends Hospital<PatientType>{
 	}
 	
 	public String hospitalType() {
-		return hospitalType();
+		return "StackHopsital";
 	}
 	
 	public String allPatientInfo() {
