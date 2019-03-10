@@ -28,11 +28,8 @@ public class StackHospital<PatientType> extends Hospital<PatientType>{
 	}
 	
 	public int numPatients() {
-		int remainedPatients = 0;
 		
-		for(int i = 0; i < patientStack.size(); i++) {
-			remainedPatients++;
-		}
+		int remainedPatients = patientStack.size();
 		
 		return remainedPatients;
 	}
@@ -42,7 +39,10 @@ public class StackHospital<PatientType> extends Hospital<PatientType>{
 	}
 	
 	public String allPatientInfo() {
-		return allPatientInfo();
+		
+		String allPatient = patientStack.toString();
+				
+		return allPatient;
 	}
 	
 }
