@@ -11,23 +11,29 @@ public class QueueHospital<PatientType> extends Hospital<PatientType> {
 	}
 	
 	public PatientType nextPatient() {
-		return nextPatient();
+		return quePatient.peek();
 	}
 	
 	public PatientType treatNextPatient() {
-		return null;
+		return quePatient.remove();
 	}
 	
 	public int numPatients() {
-		return 0;
+		
+		int patients = quePatient.size();
+		
+		return patients;
 	}
 	
 	public String hospitalType() {
-		return null;
+		return "QueueHospital";
 	}
 	
 	public String allPatientInfo() {
-		return null;
+		
+		String allInfo = quePatient.toString();
+		
+		return allInfo;
 	}
 	
 }
