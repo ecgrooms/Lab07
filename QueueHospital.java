@@ -11,7 +11,7 @@ public class QueueHospital<PatientType> extends Hospital<PatientType> {
 	}
 	
 	public PatientType nextPatient() {
-		return null;
+		return nextPatient();
 	}
 	
 	public PatientType treatNextPatient() {

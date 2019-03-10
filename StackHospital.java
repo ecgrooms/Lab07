@@ -5,6 +5,10 @@ public class StackHospital<PatientType> extends Hospital<PatientType>{
 	
 	private Stack<PatientType> patientStack;
 	
+	public StackHospital() {
+		
+	}
+	
 	public void addPatient(PatientType patient) {
 		
 		patientStack.add(patient);
